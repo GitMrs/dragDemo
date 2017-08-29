@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大小</title>
+</head>
+	<style>
+		*{margin: 0;padding: 0}
+		#box{
+			height: 200px;
+			width: 200px;
+			background: red;
+			position: relative;
+		}
+		h4{text-align: center;color: #fff}
+		#tl{
+			height: 20px;
+			width: 20px;
+			background: #000;
+			position: absolute;
+			top: 0px;
+			left: 0px
+		}
+		#tr{
+			height: 20px;
+			width: 20px;
+			background: #000;
+			position: absolute;
+			top: 0px;
+			right: 0px
+		}
+		#bl{
+			height: 20px;
+			width: 20px;
+			background: #000;
+			position: absolute;
+			bottom: 0px;
+			left: 0px
+		}
+		#br{
+			height: 20px;
+			width: 20px;
+			background: #000;
+			position: absolute;
+			bottom: 0px;
+			right: 0px
+		}
+	</style>
+<body>
+	<div id="box">
+		<h4 id="h">点着我就可以走了</h4>
+		<span id="tl"> </span>
+		<span id="tr"> </span>
+		<span id="bl"> </span>
+		<span id="br"> </span>
+	</div>
+</body>
+	<script src="js/rangmod.js"></script>
+	<script src="js/drop_1.js"></script>
+	<script>
+		mod.move("h",true)
+		mod.size("bl",false,"bl")
+		mod.size("br",false,"br")
+		mod.size("tl",false,"tl")
+		mod.size("tr",false,"tr")
+
+	</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大小</title>
+</head>
+	<style>
+		*{margin: 0;padding: 0}
+		#box{
+			height: 200px;
+			width: 200px;
+			background: red;
+			position: relative;
+		}
+		#small{
+			height: 20px;
+			width: 20px;
+			background: #000;
+			position: absolute;
+			bottom: 0px;
+			right: 0px
+		}
+	</style>
+<body>
+	<div id="box">
+		<span id="small"> </span>
+	</div>
+</body>
+	<script src="js/rangmod.js"></script>
+	<script src="js/drop.js"></script>
+	<script>
+		mod.move("box",true)
+		mod.size("small",[100,600])
+	</script>
+</html>

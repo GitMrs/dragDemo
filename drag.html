@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽</title>
+</head>
+	<style>
+		*{margin: 0;padding: 0}
+		#box{height: 100px;width: 100px;background: red;position: relative;left: 0;top: 0}
+		.span{position: absolute;height: 30px;width: 30px;background: blue;display: inline-block;}
+		.span:first{right: 0;top: 0}
+		#bigs{right: 0;bottom:0}
+	</style>
+<body>
+	<div id="box">
+		<span class="span" id="big"></span>
+		<span class="span" id="bigs"></span>
+	</div>
+</body>
+	<script src="js/drag.js"></script>
+</html>
